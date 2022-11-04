@@ -1,12 +1,12 @@
-# TypedDrawerNavigationApp
-
+# TypedDrawerNavigationApp -
 Instructions:
-#git clone https://github.com/sisoalbert/TypedDrawerNavigationApp
 
-#yarn install
+git clone https://github.com/sisoalbert/TypedDrawerNavigationApp
 
-#cd ios
+yarn install
 
-#pod install
+cd ios
+
+pod install
 
 All good!!
