@@ -1,7 +1,15 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, useColorScheme, View} from 'react-native';
 import React from 'react';
 
 const AccountCard = () => {
+  const isDarkMode = useColorScheme() === 'dark';
+
+  const backgroundStyle = {
+    backgroundColor: isDarkMode ? '#232826' : '#fff',
+    color: isDarkMode ? '#fff' : '#000',
+    buttonBackgroundColor: isDarkMode ? '#fff' : '#000',
+  };
+
   return (
     <View
       style={{
@@ -11,14 +19,14 @@ const AccountCard = () => {
       }}>
       <Text
         style={{
-          color: '#fff',
+          color: backgroundStyle.color,
           fontSize: 16,
         }}>
         Current Balance
       </Text>
       <Text
         style={{
-          color: '#fff',
+          color: backgroundStyle.color,
           fontSize: 40,
           fontWeight: '700',
         }}>

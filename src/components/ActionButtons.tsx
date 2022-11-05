@@ -1,7 +1,21 @@
-import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {
+  Image,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  useColorScheme,
+  View,
+} from 'react-native';
 import React from 'react';
 
 const ActionButtons = () => {
+  const isDarkMode = useColorScheme() === 'dark';
+
+  const backgroundStyle = {
+    backgroundColor: isDarkMode ? '#1DA756' : '#D3F36B',
+    color: isDarkMode ? '#fff' : '#000',
+  };
+
   return (
     <View
       style={{
@@ -14,7 +28,7 @@ const ActionButtons = () => {
         style={{
           width: 50,
           height: 50,
-          backgroundColor: '#1DA756',
+          backgroundColor: backgroundStyle.backgroundColor,
           justifyContent: 'center',
           alignItems: 'center',
           borderRadius: 10,
@@ -30,7 +44,7 @@ const ActionButtons = () => {
         style={{
           width: 50,
           height: 50,
-          backgroundColor: '#1DA756',
+          backgroundColor: backgroundStyle.backgroundColor,
           justifyContent: 'center',
           alignItems: 'center',
           borderRadius: 10,
@@ -46,7 +60,7 @@ const ActionButtons = () => {
         style={{
           width: 50,
           height: 50,
-          backgroundColor: '#1DA756',
+          backgroundColor: backgroundStyle.backgroundColor,
           justifyContent: 'center',
           alignItems: 'center',
           borderRadius: 10,
@@ -62,7 +76,7 @@ const ActionButtons = () => {
         style={{
           width: 50,
           height: 50,
-          backgroundColor: '#1DA756',
+          backgroundColor: backgroundStyle.backgroundColor,
           justifyContent: 'center',
           alignItems: 'center',
           borderRadius: 10,

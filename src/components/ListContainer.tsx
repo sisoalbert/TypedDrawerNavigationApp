@@ -1,4 +1,10 @@
-import {View, Text, TouchableOpacity, Image} from 'react-native';
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  Image,
+  useColorScheme,
+} from 'react-native';
 import React from 'react';
 
 import Data from '../../assets/CrypoAssets/data.json';
@@ -18,13 +24,23 @@ type itemType = {
   item: DataType;
 };
 const ListContainer = () => {
+  const isDarkMode = useColorScheme() === 'dark';
+
+  const backgroundStyle = {
+    backgroundColor: isDarkMode ? '#232826' : '#fff',
+    color: isDarkMode ? '#fff' : '#000',
+  };
+
   const Card = ({item}: itemType) => {
     return (
-      <View style={{}}>
+      <View
+        style={{
+          alignItems: 'center',
+        }}>
         <TouchableOpacity
           style={{
-            backgroundColor: '#232826',
-            width: '100%',
+            backgroundColor: backgroundStyle.backgroundColor,
+            width: '90%',
             height: 80,
             borderRadius: 10,
             flexDirection: 'row',
@@ -64,7 +80,7 @@ const ListContainer = () => {
               }}>
               <Text
                 style={{
-                  color: '#fff',
+                  color: backgroundStyle.color,
                   paddingBottom: 10,
                   fontSize: 15,
                   fontWeight: '500',
@@ -88,7 +104,7 @@ const ListContainer = () => {
             }}>
             <Text
               style={{
-                color: '#fff',
+                color: backgroundStyle.color,
                 paddingBottom: 10,
                 fontSize: 15,
                 fontWeight: '500',
@@ -120,6 +136,8 @@ const ListContainer = () => {
       <View
         style={{
           width: '100%',
+          //   justifyContent: 'center',
+          //   alignItems: 'center',
         }}>
         <FlatList
           data={Data}

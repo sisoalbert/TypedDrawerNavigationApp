@@ -1,7 +1,21 @@
-import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {
+  Image,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  useColorScheme,
+  View,
+} from 'react-native';
 import React from 'react';
 
 const Header = () => {
+  const isDarkMode = useColorScheme() === 'dark';
+
+  const backgroundStyle = {
+    backgroundColor: isDarkMode ? '#3C413F' : '#7C7C7C',
+    color: isDarkMode ? '#fff' : '#000',
+  };
+
   return (
     <View
       style={{
@@ -15,7 +29,7 @@ const Header = () => {
           borderRadius: 10,
           height: 40,
           width: 40,
-          backgroundColor: '#3C413F',
+          backgroundColor: backgroundStyle.backgroundColor,
           justifyContent: 'center',
           alignItems: 'center',
         }}>
@@ -39,7 +53,7 @@ const Header = () => {
             borderRadius: 10,
             height: 40,
             width: 40,
-            backgroundColor: '#3C413F',
+            backgroundColor: backgroundStyle.backgroundColor,
             justifyContent: 'center',
             alignItems: 'center',
             marginRight: 40,
@@ -59,7 +73,7 @@ const Header = () => {
             borderRadius: 10,
             height: 40,
             width: 40,
-            backgroundColor: '#3C413F',
+            backgroundColor: backgroundStyle.backgroundColor,
             justifyContent: 'center',
             alignItems: 'center',
           }}>
