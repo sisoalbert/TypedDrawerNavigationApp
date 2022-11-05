@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "name": "Bitcoin",
+    "price": "0.02 BTC",
+    "dollar_amount": 1861.12,
+    "percent": 1.73,
+    "imgLight": "https://ik.imagekit.io/ylhb6uaqdmf/cyptoApp/bitcoin-logo-dark_7E4TjqON8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667633348491",
+    "imgDark": "https://ik.imagekit.io/ylhb6uaqdmf/cyptoApp/bitcoin-logo_6lCvHXQomw.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667634406053"
+  },
+  {
+    "id": 2,
+    "name": "Etherium",
+    "price": "1.20 Eth",
+    "dollar_amount": 1401.12,
+    "percent": 1.73,
+    "imgLight": "https://ik.imagekit.io/ylhb6uaqdmf/cyptoApp/ethereum-dark_SRud8ylj8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667633348517",
+    "imgDark": "https://ik.imagekit.io/ylhb6uaqdmf/cyptoApp/ethereum_746EQVrfj.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667634405453"
+  },
+  {
+    "id": 3,
+    "name": "BNB",
+    "price": "0.50 BNB",
+    "dollar_amount": 345.12,
+    "percent": 1.73,
+    "imgLight": "https://ik.imagekit.io/ylhb6uaqdmf/cyptoApp/bnb-dark_anZy1db_v.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667633348652",
+    "imgDark": "https://ik.imagekit.io/ylhb6uaqdmf/cyptoApp/bnb_BCrb0uAa-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667634405503"
+  },
+
+  {
+    "id": 4,
+    "name": "Dash",
+    "price": "1.02 Dash",
+    "dollar_amount": 142.12,
+    "percent": 1.73,
+    "imgLight": "https://ik.imagekit.io/ylhb6uaqdmf/cyptoApp/bitcoin-logo-dark_7E4TjqON8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667633348491",
+    "imgDark": "https://ik.imagekit.io/ylhb6uaqdmf/cyptoApp/dash_s85KqZWbp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667634405981"
+  }
+]

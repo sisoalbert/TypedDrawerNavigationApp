@@ -8,7 +8,10 @@ import Settings from '../screens/Home';
 const Drawer = () => {
   const Drawer = createDrawerNavigator();
   return (
-    <Drawer.Navigator>
+    <Drawer.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}>
       {/* Drawer Screens here */}
       <Drawer.Screen name="Home" component={Home} />
       <Drawer.Screen name="Settings" component={Settings} />
